@@ -1,0 +1,111 @@
+.task{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    background: #20212C;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+  
+label {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    color: #fff;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+  
+label:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+input[type="checkbox"]:checked + label:before {
+    background-color: #1e4d80;
+    border-color: #007bff;
+}
+
+input[type="checkbox"]:checked + #checkbox-circlq:before {
+    background-color: #1e4d80;
+    border-color: #007bff;
+}
+
+.date-task p{
+    padding: 2px;
+    color: #58586D;
+}
+
+.descicao-task p{
+    color: #BABABA;
+}
+
+.button-task {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 07px;
+    border: none;
+    padding: 0px;
+    background: none;
+  }
+  
+#delet-button{
+    display: flex;
+    align-items: center;
+    width: 17px;
+}
+
+#buttonDelet-task p{
+    color: #FF6868;;
+}
+
+#buttonDelet-task:hover{
+    filter: drop-shadow(0px 0px 8px #A14949);
+}
+
+
+#edit-button {
+    display: flex;
+    align-items: center;
+    width: 13px;
+}
+
+#buttonEdit-task p{
+    color: #FFF7B4;
+}
+
+#buttonEdit-task:hover{
+    filter: drop-shadow(0px 0px 8px rgba(255, 245, 162, 0.5));
+}
+
+
+.icon-buttonTask img {
+    width: 100%;
+}
+  
+button p {
+    font-size: 14px;
+    margin: 0;
+}
+  
+
+
+

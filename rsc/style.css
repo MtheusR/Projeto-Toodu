@@ -1,0 +1,179 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+}
+  
+h2{
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 30px;
+color: #fff;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background: #15161D;
+  gap: 20px;
+}
+
+.container {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  background: #17181F;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 40px 0px #0000004D;
+}
+
+.column {
+  display: flex;
+  column-gap: 15px;
+}
+
+
+.form .select-box{
+    height: 50px;
+    width: 50%;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+  
+    margin-top: 8px;
+    border: none;
+    border-radius: 10px;
+    padding: 0 15px;
+    background: #20212C;
+}
+
+.form .input-box {
+    width: 100%;
+}
+
+.form :where(.input-box input) {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #fff;
+
+  margin-top: 8px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  background: #20212C;
+}
+
+input[type="date"] {
+    margin-top: 8px;
+    background: #20212C;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 15px;
+} 
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+  
+
+textarea {
+    height: 15vh;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+
+    margin-top: 15px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background: #20212C;
+}
+
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #D3D3D3;
+    background: #20212C;
+    font-size: 1rem;
+}
+
+.input-box input:focus {
+  border: 1px solid #4b4b4b;
+}
+
+textarea:focus{
+    border: 1px solid #4b4b4b;
+}
+  
+button{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttonAdd {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 8px;
+    padding: 10px 20px;
+
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+
+    border: 2px solid #292A35;
+    border-radius: 10px;
+    background: none;
+
+    
+    
+}
+
+.icon-buttonAdd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 25px;
+    height: 25px;
+
+    background: #F93674;
+    border-radius: 8px;
+}
+
+button.buttonAdd:hover {
+  background-color: #F93674;
+  border: 2px solid #F93674;
+}

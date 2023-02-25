@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODUU</title>
+
+    <link rel="stylesheet" href="/rsc/style.css">
+    <link rel="stylesheet" href="/rsc/task-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-n3PIaHFcDsFfdzUCZ+aRm0A2dVvUGJmql0FVzpxB+IXb7ObzLyckJPQiz9J+5L6NkKjUwtN6U5y6dM1zKjMkA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <h1>Toodu</h1>
+
+    <section class="container">
+
+        <h2>Nova Task</h2>
+        
+        <form action="#" class="form">
+
+            <div class="column">
+
+                <div class="input-box">
+                    <input type="text" placeholder="Digite seu nome e sobrenome" required />
+                </div>
+
+                <div class="select-box">
+                  <select>
+                    <option hidden>Prioridades</option>
+                    <option>Alta</option>
+                    <option>Baixa</option>
+                    <option>Nula</option>
+                  </select>
+                </div>
+                
+                <div class="date-box">
+                    <input type="date" placeholder="Digite sua cidade" required />
+                </div>
+        
+            </div>
+
+            <textarea class="input-box" id="txt-descricao" placeholder="Digite aqui a descrição"></textarea>
+        </form>
+
+        <button class="buttonAdd">
+            <div class="icon-buttonAdd">+</div>
+            <div>Adicionar task</div>
+        </button>   
+    </section>
+
+    <section class="container">
+        <div class="task">
+            <div class="column" id="head-task">
+                <div class="check-titulo-task">
+                    <input class="check-task" type="checkbox" id="checkbox-circle">
+                    <label class="titulo-task" for="checkbox-circle">Comprar ração pra Luke</label>
+                </div>
+
+                <div class="date-task">
+                    <p class="data-task">28/02/23</p>
+                </div>
+            </div>
+
+            <div class="descicao-task">
+                <p>Criar um projeto CRUD usando HTML, CSS e JS</p>
+            </div>
+
+            <div class="column" id="option-task">
+                <button class="button-task" id="buttonEdit-task">
+                    <div class="icon-buttonTask" id="edit-button">
+                        <img src="/rsc/imagens/icon-edit.png" alt="icone-editar">
+                    </div>
+                    <p>Editar</p>
+                </button>
+
+                <button class="button-task" id="buttonDelet-task">
+                    <div class="icon-buttonTask" id="delet-button">
+                        <img  src="/rsc/imagens/icon-delet.png" alt="icone-deletar">
+                    </div>
+                    <p>Excluir</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="task">
+            <div class="column" id="head-task">
+                <div class="check-titulo-task">
+                    <input class="check-task" type="checkbox" id="checkbox-circle">
+                    <label class="titulo-task" for="checkbox-circle">Comprar ração pra Luke</label>
+                </div>
+
+                <div class="date-task">
+                    <p class="data-task">05/02/23</p>
+                </div>
+            </div>
+
+            <div class="descicao-task">
+                <p>Fazer alguma coisa no ChatGPT</p>
+            </div>
+
+            <div class="column" id="option-task">
+                <button class="button-task" id="buttonEdit-task">
+                    <div class="icon-buttonTask" id="edit-button">
+                        <img src="/rsc/imagens/icon-edit.png" alt="icone-editar">
+                    </div>
+                    <p>Editar</p>
+                </button>
+
+                <button class="button-task" id="buttonDelet-task">
+                    <div class="icon-buttonTask" id="delet-button">
+                        <img  src="/rsc/imagens/icon-delet.png" alt="icone-deletar">
+                    </div>
+                    <p>Excluir</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="task">
+            <div class="column" id="head-task">
+                <div class="check-titulo-task">
+                    <input class="check-task" type="checkbox" id="checkbox-circle">
+                    <label class="titulo-task" for="checkbox-circle">Comprar ração pra Luke</label>
+                </div>
+
+                <div class="date-task">
+                    <p class="data-task">30/03/23</p>
+                </div>
+            </div>
+
+            <div class="descicao-task">
+                <p>Bonanza com promoção</p>
+            </div>
+
+            <div class="column" id="option-task">
+                <button class="button-task" id="buttonEdit-task">
+                    <div class="icon-buttonTask" id="edit-button">
+                        <img src="/rsc/imagens/icon-edit.png" alt="icone-editar">
+                    </div>
+                    <p>Editar</p>
+                </button>
+
+                <button class="button-task" id="buttonDelet-task">
+                    <div class="icon-buttonTask" id="delet-button">
+                        <img  src="/rsc/imagens/icon-delet.png" alt="icone-deletar">
+                    </div>
+                    <p>Excluir</p>
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
