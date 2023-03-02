@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CRUD - HTML,CSS,JS</title>
+    <!-- Add responsive meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/task-style.css">
+</head>
+
+<body>
+    <h1 id="title-page"> Toodu </h1>
+
+    <div class="container">
+
+        <h2 id="title-form">Nova Task</h2> 
+
+        <form id="form" >
+
+            <div class="column">
+
+                <!-- TITULO -->
+                <input class="form-content" type="text" placeholder="Digite aqui o título..." id="title"/>
+                
+                <!-- PRIORIDADE -->
+                <select id="priority" class="form-content">
+                    <option value="null" disabled selected>Prioridade</option>
+                    <option value="Alta">Alta</option>
+                    <option value="Media">Media</option>
+                    <option value="Baixa">Baixa</option>
+
+                </select>
+                <!-- DATA -->
+                <input type="date" class="form-content" id="due-date"/>
+                
+            </div>
+
+            <!-- DESCRICAO -->
+            <textarea class="form-content" id="description" rows="5" placeholder="Digite aqui a descrição..."></textarea>
+
+            <!-- BOTAO -->
+            <button type="button" id="add-button">
+                <div>Adicionar task</div> 
+            </button>
+            
+            <button id="save-button" class="save-button" style="display: none;">Salvar</button>
+
+        </form>
+    </div>
+
+    <div class="container">
+        <ul id="list"></ul> 
+    </div>
+
+
+    <script src="script.js"></script>
+ 
+</body>
+
+</html>
